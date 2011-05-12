@@ -68,10 +68,8 @@ class Chef
         end
         
         @connection = XMLRPC::Client.new2(KnifeGandi::API_ENDPOINT_URL)
-        @api_key    = Chef::Config[:knife][:gandi_api_key] || config[:gandi_api_key]
+        @api_key    = Chef::Config[:knife][:gandi_api_key] || config[:gandi_api_key] || raise("No Gandi API key was specified")
         
-        raise "No Gandi API key was specified" unless api_key
-
         image_list = [ 
           ui.color('ID', :bold), 
           ui.color('Name', :bold), 
