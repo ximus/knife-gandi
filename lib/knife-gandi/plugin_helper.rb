@@ -41,7 +41,7 @@ module KnifeGandi
       public_ips.collect { |ip| ip['reverse'] }
     end
     
-    # Returns the public IP Resource objects sent from the server.
+    # Returns the public IP Resource objects sent from the API.
     # Look up their representation in the Gandi API docs.
     def ip_objects_of(server, opts={})
       # Server has n ifaces which hold 2 IPs (IPv4 and IPv6)
