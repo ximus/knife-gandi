@@ -13,8 +13,6 @@ Gem::Specification.new do |s|
   s.email = "maximeliron@gmail.com"
   s.homepage = "http://wiki.opscode.com/display/chef"
 
-  s.add_dependency "net-ssh", "~> 2.1.3"
-  s.add_dependency "net-ssh-multi", "~> 1.0.1"
   s.require_path = 'lib'
   s.files = %w(LICENSE README.rdoc) + Dir.glob("lib/**/*")
 end
