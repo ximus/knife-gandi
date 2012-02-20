@@ -50,7 +50,7 @@ module KnifeGandi
         public_ifaces = public_ifaces.find_all { |iface| iface['type'] == 'public' }
       end
       
-      public_ips = public_ifaces.collect_concat { |iface| iface['ips'] }
+      public_ips = public_ifaces.map { |iface| iface['ips'] }.flatten(1)
       if opts.has_key?(:version)
         # Filter IP version (4|6)
         public_ips = public_ips.find_all { |ip| ip['version'] == opts[:version] }
