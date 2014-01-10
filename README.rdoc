@@ -63,6 +63,11 @@ Outputs a list of all available datacenters.  This data can be useful when choos
 Outputs a list of all available images available to the currently configured Gandi account.  An image is a collection of files used to create or rebuild a server. Gandi provides a number of pre-built OS images by default.  This data can be useful when choosing an image id to pass to the <tt>knife gandi server create</tt> subcommand.
 
 
+= AUTHOR NOTE:
+
+I am not using this plugin any longer. Compatibility with the latest Gandi API changes is not guaranteed. I will accept PRs to the https://github.com/ximus/knife-gandi repo.
+
+
 = LICENSE:
 
 Author:: Maxime Liron (<maximeliron@gmail.com>)
