@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.description = s.summary
   s.author = "Maxime Liron"
   s.email = "maximeliron@gmail.com"
-  s.homepage = "http://wiki.opscode.com/display/chef"
+  s.homepage = "https://github.com/ximus/knife-gandi"
 
   s.require_path = 'lib'
   s.files = %w(LICENSE README.rdoc) + Dir.glob("lib/**/*")
